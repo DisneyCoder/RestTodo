@@ -12,7 +12,7 @@ class Task extends Model {
 
     protected $guarded = [];
 
-    protected function cast() {
+    protected function casts() {
         return [
             'is_finished' => 'boolean',
             'finished_at' => 'datetime',
